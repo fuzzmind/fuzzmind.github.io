@@ -1,0 +1,38 @@
+# Cloudflare Pages security response headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+
+# Hashed static assets can be cached for a long time.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# search-index.json can be cached briefly.
+/search-index.json
+  Cache-Control: public, max-age=300
+
+# RSS/JSON exports
+/rss.xml
+/rss.xml/
+/advisories.rss.xml
+/advisories.rss.xml/
+/research.rss.xml
+/research.rss.xml/
+/advisories.json
+/advisories.json/
+/rss.xsl
+/rss.xsl/
+  Cache-Control: public, max-age=3600
+
+/pgp.asc
+  Content-Type: application/pgp-keys
+  Content-Disposition: attachment; filename="fuzzmind-pgp.asc"
+  Cache-Control: public, max-age=3600

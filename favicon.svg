@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
+  <rect width="64" height="64" fill="#0a0a0a"/>
+  <path d="M16 48 L16 16 L48 16" fill="none" stroke="#ff9f1c" stroke-width="8" stroke-linecap="square"/>
+  <path d="M16 32 L36 32" fill="none" stroke="#ff9f1c" stroke-width="8" stroke-linecap="square"/>
+  <!-- Glitch blocks / Mind nodes -->
+  <rect x="44" y="28" width="8" height="8" fill="#ff3366"/>
+  <rect x="36" y="40" width="8" height="8" fill="#ffb84d"/>
+  <rect x="48" y="44" width="8" height="8" fill="#ff9f1c"/>
+  <rect x="28" y="48" width="8" height="8" fill="#c97b12"/>
+</svg>
