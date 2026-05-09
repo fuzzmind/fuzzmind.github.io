@@ -1,12 +1,12 @@
 # FuzzMind Security Labs - security.txt
-# https://fuzzmind.com/security
+# https://fuzzmind.io/security
 
-Contact: mailto:security@fuzzmind.com
-Contact: https://fuzzmind.com/contact
-# Encryption: https://fuzzmind.com/pgp.asc
-# Long-term PGP key pending publication; email first without exploit detail.
+Contact: mailto:security@fuzzmind.io
+Contact: https://fuzzmind.io/contact
+Encryption: https://fuzzmind.io/pgp.asc
+# PGP fingerprint: 9B80 FD6F B83A 1D7A 5F29 53D1 191B 3644 0B65 0C07
 Preferred-Languages: en
-Canonical: https://fuzzmind.com/.well-known/security.txt
-Policy: https://fuzzmind.com/security
-Acknowledgments: https://fuzzmind.com/credits
-Expires: 2027-01-01T00:00:00Z
+Canonical: https://fuzzmind.io/.well-known/security.txt
+Policy: https://fuzzmind.io/security
+Acknowledgments: https://fuzzmind.io/credits
+Expires: 2027-05-01T00:00:00Z
